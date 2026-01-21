@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts • PlanetPong.xyz</title>
+  <meta name="description" content="Posts and devlogs." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Small extra styles just for this page -->
+  <style>
+    .post {
+      scroll-margin-top: 90px; /* so the sticky header doesn't cover the title */
+    }
+    .post__meta {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .post__title {
+      margin: 0 0 10px;
+    }
+    .post__content p, .post__content li {
+      color: rgba(240, 248, 255, 0.72);
+      line-height: 1.75;
+    }
+    .toc {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .toc a {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(174, 210, 225, 0.18);
+      background: rgba(16, 22, 30, 0.35);
+      transition: transform 180ms ease, background 180ms ease;
+    }
+    .toc a:hover {
+      transform: translateY(-2px);
+      background: rgba(143, 231, 255, 0.06);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg">
+    <div class="stars"></div>
+    <div class="stars stars2"></div>
+    <div class="stars stars3"></div>
+    <div class="nebula"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__text">planetpong.xyz</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About me</a>
+        <a class="nav__link" href="projects.html">Stuff I’ve Done</a>
+        <a class="nav__link active" href="posts.html">Posts</a>
+        <a class="nav__link" href="index.html#links">Links</a>
+      </nav>
+
+      <button class="navbtn" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Page intro -->
+    <section class="section hero hero--page">
+      <div class="hero__content reveal">
+        <p class="kicker">Logs / Posts</p>
+        <h1 class="title"><span class="accent">Posts</span></h1>
+        <p class="subtitle">
+          Short devlogs, notes, and updates. Click a post below to jump to it.
+        </p>
+
+        <!-- Table of contents -->
+        <div class="toc">
+          <a href="#post-1">
+            <span>LOG 001 // Building PlanetPong.dev | My Space Portfolio</span>
+            <span class="muted">↘</span>
+          </a>
+          <a href="#post-2">
+            <span>LOG 002 // Making a college website for an assignment</span>
+            <span class="muted">↘</span>
+          </a>
+          <a href="#post-3">
+            <span>LOG 003 // Coding my first big python project</span>
+            <span class="muted">↘</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><span></span></div>
+
+    <!-- POST 1 -->
+    <section class="section post reveal" id="post-1">
+      <article class="card">
+        <div class="post__meta">
+          <span class="pill">Devlog</span>
+          <span class="muted small">LOG 001</span>
+          <span class="muted small">•</span>
+          <time class="muted small" datetime="2026-01-21">21/01/2026</time>
+        </div>
+
+        <h2 class="post__title">Building PlanetPong.dev | Personal Website Portfolio</h2>
+
+        <div class="post__content">
+          <p>
+            I decided to build PlanetPong.dev as a personal portfolio to showcase the projects I’ve worked on, what I’m learning, my passions, and how my skills are developing over time. I wanted the site to feel more than just a basic webpage — it needed to feel structured, intentional, and uniquely mine. 
+          </p>
+
+          <p><strong>My goal:</strong></p>
+          <p>The main goal of this portfolio is to:</p>
+          <ul>
+            <li>Show my passions, projects, and ideas</li>
+            <li>Practice programming languages including: Java, python and html + css</li>
+            <li>Design something, sleek, modern and creative</li>
+          </ul>
+
+          <p>I also wanted the site to be easy navigation, where visitors can quickly understand who I am, what I've made and what I'm looking for in the future.</p>
+
+          <p><strong>The Design and Theme:</strong></p>
+          <p>I chose a space-themed design because it fits the idea of exploration, creativity, and building things from scratch. The dark background, subtle star effects, and glowing accents help give the site a sci-fi feel without being distracting.</p>
+
+          <p><strong>I focused on:</strong></P>
+            <ul>
+                <li>Clean layouts and carb-based sections</li>
+                <li>Spacings and round elements</li>
+                <li>Smooth subtle animations instead of flashy effects</li>
+            </ul>
+            <p>The goal was for everything to be simple but still smooth and readable</p>
+
+            <p><strong>Design and theme</strong></p>
+      <p>
+        I chose a space-themed design because it represents exploration, creativity, and building
+        things from scratch. The dark background, subtle star effects, and glowing accents help give
+        the site a sci-fi feel without being distracting.
+      </p>
+
+      <ul>
+        <li>Clean, card-based layouts</li>
+        <li>Consistent spacing and rounded elements</li>
+        <li>Subtle animations instead of flashy effects</li>
+      </ul>
+
+      <p><strong>Site structure</strong></p>
+      <p>
+        Instead of putting everything on one long page, I built a multi-page website. This makes the
+        site feel more realistic and easier to navigate. The main pages include:
+      </p>
+
+      <ul>
+        <li><strong>Home</strong> – an overview of the site and featured content</li>
+        <li><strong>About</strong> – information about me and my interests</li>
+        <li><strong>Stuff I’ve Done</strong> – a projects page with expandable sections</li>
+        <li><strong>Posts</strong> – devlogs and written reflections like this one</li>
+      </ul>
+
+      <p><strong>Projects page</strong></p>
+      <p>
+        One of the features I’m most proud of is the expandable project cards. Each project starts
+        with a short summary, and clicking the <em>Details</em> button expands the card to show more
+        information and relevant links.
+      </p>
+
+      <p>
+        This keeps the page clean while still allowing space for detailed explanations.
+      </p>
+
+
+      <p><strong>What I learned</strong></p>
+      <ul>
+        <li>How to structure a real multi-page website</li>
+        <li>How JavaScript can control interactions like expanding sections</li>
+        <li>Why consistency in layout and spacing matters</li>
+        <li>How to design with the user experience in mind</li>
+      </ul>
+
+      <p><strong>Next steps</strong></p>
+      <p>
+        In the future, I want to add screenshots to projects, improve mobile responsiveness,
+        publish more posts, and deploy the site with a custom domain.
+      </p>
+
+      <p><strong>Inspiration</strong></p>
+      <p>The reason I made this portfolio after getting inspired from one of my friends (who is a game developer) Aidan who made a similar dev portfolio.</p>
+        <a href="https://nowaidan.dev/"><u>Click: NowAidan</u></a>
+
+      
+
+          <div class="project__links">
+            <a class="btn btn--ghost btn--small" href="#top">Back to top</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="divider"><span></span></div>
+
+    <!-- POST 2 -->
+    <section class="section post reveal" id="post-2">
+      <article class="card">
+        <div class="post__meta">
+          <span class="pill">Notes</span>
+          <span class="muted small">LOG 002</span>
+          <span class="muted small">•</span>
+          <time class="muted small" datetime="2026-01-21">27/06/2025</time>
+        </div>
+
+        <h2 class="post__title">Making a college/school web design for an assignment</h2>
+
+        <div class="post__content">
+          <p>
+            As part of a school Digital Technologies assessment, 
+            I was tasked with designing and building a website that either raised awareness of, 
+            or offered a solution to, an issue within my local community. 
+            The aim of the task was not just to create a website, 
+            but to think about how digital tools can be used to inform, influence, and support real people. 
+          </p>
+
+          <p><strong>Task brief:</strong></p>
+          <p>This assignment had required us to:</p>
+          <ul>
+            <li>Create a website that is relatd to a community issue </li>
+            <li>Raise awareness to our local community</li>
+            <li>Design the site where it is easy to understand for the intended audience</li>
+
+          </ul>
+
+          <p><strong>My idea:</strong></p>
+          <p>I decided to create a website that focuses on the Digital Technologies course at my college. From my experience, many junior students don’t fully understand what Digital Technologies involves, or how it connects to future study and careers. This can lead to students overlooking the subject before they even give it a chance.
+          </p>
+
+          <p><strong>My goal was to create a website that:</strong></p>
+          <ul>
+            <li>Introduce what digital technologies is at our college</li>
+            <li>Explains why junior students should partake in the DIT course</li>
+            <li>SHow a clear outline of NCEA level 1, 2 and 3 Digital</li>
+          </ul>
+
+          <p><strong>Next upgrade idea:</strong> add a “Featured project” block on Home that links to Projects.</p>
+
+          <div class="project__links">
+            <a class="btn btn--ghost btn--small" href="#top">Back to top</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="divider"><span></span></div>
+
+    <!-- POST 3 -->
+    <section class="section post reveal" id="post-3">
+      <article class="card">
+        <div class="post__meta">
+          <span class="pill">Dev tips</span>
+          <span class="muted small">LOG 003</span>
+          <span class="muted small">•</span>
+          <time class="muted small" datetime="2026-01-21">6/11/25</time>
+        </div>
+
+        <h2 class="post__title">Creating my first python program</h2>
+
+        <div class="post__content">
+          <p>
+            At school, we were assigned a task to create a python program that solves a problem or make something fun.
+          </p>
+        <p>It was reccomended to all students to create a mini text-based quiz, but I decided to make a fun
+            mini text-based <strong>escape room</strong>
+        </p>
+
+        <p><strong>What I did:</strong></p>
+        <p>I needed to think about how I can make this game work, so I decided that using text responding to
+            the players <strong>commands</strong>. 
+        </p>
+        <p>Next I needed to think about the different themes, difficulty and rooms the user will be in. </p>
+        <p>At first it was hard at the start, but by the end </p>
+          
+
+          <p class="muted small">
+            Next: I want to add a tiny “scanline” divider animation between sections.
+          </p>
+
+          <div class="project__links">
+            <a class="btn btn--ghost btn--small" href="#top">Back to top</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p class="muted small">© <span id="year"></span> PlanetPong.dev</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Year safety (in case script.js doesn't include it)
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

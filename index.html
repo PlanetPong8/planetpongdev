@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | PlanetPong.xyz</title>
+    <meta name="desription" content="Personal Website: home, projects, posts, about me">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="stars"></div>
+    <div class=""></div>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="home.html" aria-label="Go to Home">
+      <span class="brand__dot"></span>
+      <span class="brand__text">PlanetPong.xyz</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__link active" href="index.html">Home</a>
+      <a class="nav__link" href="about.html">About me</a>
+      <a class="nav__link" href="projects.html">Stuff I’ve Done</a>
+      <a class="nav__link" href="posts.html">Posts</a>
+      <a class="nav__link" href="home.html#links">Links</a>
+    </nav>
+
+    <button class="navbtn" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+
+<main class="container">
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="hero__content reveal">
+        <p class="kicker">welcome to my space-themed portfolio</p>
+        <h1 class="title">
+          Hi, I’m <span class="accent">Justin</span> 👋
+        </h1>
+        <p class="subtitle">
+          I build things codes, designs, projects — and write posts about what I learn about astronomy.
+          Welcome to my little corner of the cosmos.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn btn--ghost" href="#posts">Read posts</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">Student / Creator</span>
+        </div>
+      </div>
+
+      <div class="hero__card reveal" style="--delay: 120ms">
+        <div class="card">
+          <div class="card__header">
+            <span class="pill">Status</span>
+            <span class="muted">• Updated today</span>
+          </div>
+          <p class="card__title">Currently working on:</p>
+          <ul class="list">
+            <li>🚀 A personal website</li>
+            <li>🧩 Coding projects</li>
+            <li>📚 School assessments</li>
+          </ul>
+          <p class="muted small">
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+<div class="divider"><span></span></div>
+
+      
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section__head reveal">
+        <h2>Stuff I’ve done</h2>
+        
+      </div>
+
+      <div class="cards">
+        <article class="card project reveal">
+          <div class="project__top">
+            <span class="pill">Website</span>
+            <span class="muted small">2026</span>
+          </div>
+          <h3>My Space Portfolio</h3>
+          <p class="muted">
+            A clean personal site with a space theme, smooth animations, and sections for projects + posts.
+          </p>
+          <div class="project__links">
+            <a class="link" href="#" target="_blank" rel="noreferrer">Live ↗</a>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="card project reveal" style="--delay: 80ms">
+          <div class="project__top">
+            <span class="pill">Python</span>
+            <span class="muted small">2025</span>
+          </div>
+          <h3>Python Code Project - Escape Room Game</h3>
+          <p class="muted">
+            A text adventure with multiple rooms, puzzles, and branching choices.
+          </p>
+          <div class="project__links">
+            <a class="link" href="#" target="_blank" rel="noreferrer">Write-up ↗</a>
+          </div>
+        </article>
+
+        <article class="card project reveal" style="--delay: 160ms">
+          <div class="project__top">
+            <span class="pill">Design</span>
+            <span class="muted small">2026</span>
+          </div>
+          <h3>Creative Branding</h3>
+          <p class="muted">
+            Logos, posters, packaging, and design experiments for school projects.
+          </p>
+          <div class="project__links">
+            <a class="link" href="#" target="_blank" rel="noreferrer">Gallery ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider"><span></span></div>
+
+
+    <!-- POSTS -->
+    <section id="posts" class="section">
+      <div class="section__head reveal">
+        <h2>Posts</h2>
+        <p class="muted">
+          Devlogs, reflections, updates. Start with 2–3 and grow over time.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card post reveal">
+          <div class="post__meta">
+            <span class="pill">Devlog</span>
+            <time class="muted small" datetime="2026-01-21">21/01/2026</time>
+          </div>
+          <h3>Building my first portfolio site</h3>
+          <p class="muted">
+            What I learned about layout, fonts, animations, and making things feel “clean”.
+          </p>
+          <button class="btn btn--ghost btn--small" data-modal="post1">Read</button>
+        </article>
+
+        <article class="card post reveal" style="--delay: 80ms">
+          <div class="post__meta">
+            <span class="pill">Notes</span>
+            <time class="muted small" datetime="2026-01-18">18/01/2026</time>
+          </div>
+          <h3>CSS tricks I keep reusing</h3>
+          <p class="muted">
+            Cards, hover effects, spacing, and how to keep a site consistent.
+          </p>
+          <button class="btn btn--ghost btn--small" data-modal="post2">Read</button>
+        </article>
+      </div>
+    </section>
+
+<div class="divider"><span></span></div>
+
+
+    <!-- LINKS -->
+    <section id="links" class="section">
+      <div class="section__head reveal">
+        <h2>Links</h2>
+        
+      </div>
+
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3>Find me online</h3>
+          <div class="linklist">
+            <a class="linkrow" href="#" target="_blank" rel="noreferrer">
+              <span>Tiktok</span><span class="muted">tiktok.com/justin_nptn ↗</span>
+            </a>
+            <a class="linkrow" href="#" target="_blank" rel="noreferrer">
+              <span>Instagram</span><span class="muted">@justin.nptn ↗</span>
+            </a>
+            <a class="linkrow" href="mailto:you@example.com">
+              <span>Email</span><span class="muted">justinhoo28@gmail.com ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card reveal" style="--delay: 100ms">
+          <h3>Contact</h3>
+          <p class="muted">
+            Any small queries? Ask away!.
+          </p>
+          <div class="note">
+            <strong>Your Message:</strong> Add a “Collabs / commissions: open/closed” status.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="muted small">© <span id="year"></span> Justin Hoo • built with HTML/CSS</p>
+    </footer>
+  </main>
+
+  <!-- Simple modal for posts -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__top">
+        <h3 id="modalTitle">Post</h3>
+        <button class="iconbtn" id="closeModal" aria-label="Close">✕</button>
+      </div>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+</body>
+</html>

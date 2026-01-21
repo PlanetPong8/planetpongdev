@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stuff I’ve Done • PlanetPong.xyz</title>
+  <meta name="description" content="Projects and things I've built." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- REQUIRED extra styles for expandable projects -->
+  <style>
+    /* Expand / collapse project details */
+    .project__details {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 300ms ease, opacity 200ms ease;
+    }
+
+    .project.open .project__details {
+      max-height: 500px;
+      opacity: 1;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg">
+    <div class="stars"></div>
+    <div class="stars stars2"></div>
+    <div class="stars stars3"></div>
+    <div class="nebula"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__text">PlanetPong.xyz</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About me</a>
+        <a class="nav__link active" href="projects.html">Stuff I’ve Done</a>
+        <a class="nav__link" href="posts.html">Posts</a>
+        <a class="nav__link" href="index.html#links">Links</a>
+      </nav>
+
+      <button class="navbtn" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="section hero hero--page">
+      <div class="hero__content reveal">
+        <p class="kicker">Portfolio</p>
+        <h1 class="title">Stuff I’ve <span class="accent">Done</span></h1>
+        <p class="subtitle">
+          Projects, school work, and experiments I’ve built.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"><span></span></div>
+
+    <!-- Projects -->
+    <section class="section">
+      <div class="cards cards--projects">
+
+        <!-- PROJECT 1 -->
+        <article class="card project reveal">
+          <h3>My Space Portfolio</h3>
+          <p class="muted">My personal multi-page space themed website.</p>
+
+          <button class="btn btn--ghost btn--small details-btn">
+            Details
+          </button>
+
+          <div class="project__details">
+            <p>
+              This is my custom website portfolio which talks about myself, my passions and my future. 
+            </p>
+            <ul>
+              <li>Sticky navbar + mobile menu</li>
+              <li>Scroll reveal animations</li>
+              <li>Projects, posts, and links pages</li>
+            </ul>
+
+            <div class="project__links">
+              <a class="btn btn--small" href="#" target="_blank">View site ↗</a>
+              <a class="btn btn--ghost btn--small" href="#" target="_blank">View code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="card project reveal">
+          <h3>Escape Room Python Program</h3>
+          <p class="muted">A text-based Python adventure with puzzles.</p>
+
+          <button class="btn btn--ghost btn--small details-btn">
+            Details
+          </button>
+
+          <div class="project__details">
+            <p>
+              A Python text adventure where players explore rooms, solve puzzles,
+              and make choices that affect the outcome.
+            </p>
+            <ul>
+              <li>Multiple rooms and paths</li>
+              <li>Puzzle-based progression</li>
+              <li>Different endings</li>
+            </ul>
+
+            <div class="project__links">
+              <a class="btn btn--small" href="#" target="_blank">Read write-up ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="card project reveal">
+          <h3>School Website Project</h3>
+          <p class="muted">My school web design project.</p>
+
+          <button class="btn btn--ghost btn--small details-btn">
+            Details
+          </button>
+
+          <div class="project__details">
+            <p>
+              A computer science website assignment talking and covering about digital technologies at my college.
+            </p>
+            <ul>
+              <li>Navigation bar</li>
+              <li>Card-based layout</li>
+              <li>Responsive design</li>
+            </ul>
+
+            <div class="project__links">
+              <a class="btn btn--small" href="#" target="_blank">View site ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="muted small">© <span id="year"></span> PlanetPong.dev</p>
+    </footer>
+  </main>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+
+  <!-- EXPAND PROJECT SCRIPT -->
+  <script>
+    document.querySelectorAll(".details-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        const project = button.closest(".project");
+
+        // Close others (optional but clean)
+        document.querySelectorAll(".project.open").forEach(p => {
+          if (p !== project) p.classList.remove("open");
+        });
+
+        project.classList.toggle("open");
+      });
+    });
+
+    // Year safety
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
